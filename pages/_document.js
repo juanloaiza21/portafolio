@@ -9,7 +9,6 @@ class MyDocument extends Document{
         return (
             <Html>
                 <Head>
-                    <title>Juan Loaiza</title>
                     <meta name="description" content='Portfolio v0.1'/>
                 </Head>
                 <body>
