@@ -78,21 +78,45 @@ export const Experiences = [
 
 export const Projects = [
     {
-        name: "Portafolio",
+        name: "Portfolio",
         technologies: "NextJs, React, Javascript, Booswatch, NodeJS",
-        description: "It's this page, the objective was create a portafolio using frontend technologies as a first step to consider myself a fullstack developer",
+        imgRef:"/portfolioConcept.jpg",
+        description: "Portfolio using frontend technologies as a first step to consider myself a fullstack developer",
         link: "https://github.com/juanloaiza21/portafolio"
     },
     {
-        name: "Nestjs login using firebase",
+        name: "Nestjs firebase/auth",
         technologies: "NestJS, Firebase, Typescript, Express, NodeJS",
+        imgRef:"/nestjs.jpg",
         description: "This project its the result of merge technologies for API REST as NestJS to make a user module using firebase authentication",
         link: "https://github.com/juanloaiza21/NestJs-logIn-Firebase"
     },
     {
-        name: "Whatsapp pseudochatbot",
-        technologies: "Express, Javascript, NodeJS",
+        name: "Whatsapp chatbot",
+        technologies: "Express, Javascript, NodeJS, Puppeteer, WhatsappWeb",
+        imgRef:"/whatsapp.jpg",
         description: "This project it's a simple automation of the whatsapp web interface using puppeteer and some npm libraries, its just code but its cool.",
         link: "https://github.com/juanloaiza21/ChatBotGenerator"
-    }
+    },
+    {
+        name: "Whatsapp chatbot",
+        technologies: "Express, Javascript, NodeJS, Puppeteer, WhatsappWeb",
+        imgRef:"/whatsapp.jpg",
+        description: "This project it's a simple automation of the whatsapp web interface using puppeteer and some npm libraries, its just code but its cool.",
+        link: "https://github.com/juanloaiza21/ChatBotGenerator"
+    },
+    {
+        name: "Nestjs firebase/auth",
+        technologies: "NestJS, Firebase, Typescript, Express, NodeJS",
+        imgRef:"/nestjs.jpg",
+        description: "This project its the result of merge technologies for API REST as NestJS to make a user module using firebase authentication",
+        link: "https://github.com/juanloaiza21/NestJs-logIn-Firebase"
+    },
+    {
+        name: "Portfolio",
+        technologies: "NextJs, React, Javascript, Booswatch, NodeJS",
+        imgRef:"/portfolioConcept.jpg",
+        description: "Portfolio using frontend technologies as a first step to consider myself a fullstack developer",
+        link: "https://github.com/juanloaiza21/portafolio"
+    },
 ]

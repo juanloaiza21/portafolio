@@ -1,0 +1,19 @@
+.overflow{
+    height: 30%;
+    overflow: hidden;
+}
+.overflow .card-img-top{
+    transform: scale(1);
+    transition: all 0.2s easy-in-out;
+}
+
+.overflow .card-img-top:hover{
+    transform: scale(1.8);
+}
+
+.button-centered-own{
+      width: '100%';
+      height: '30%';
+      align-items: center;
+      justify-content: center;
+}

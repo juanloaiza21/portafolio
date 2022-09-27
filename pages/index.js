@@ -28,14 +28,16 @@ const Index = () => (
                 </div>
             </div>
         </header>
+
         {/* Second section*/}
+        {/**Skills */}
         <div className="row py-2">
             <div className="col-md-4">
                 <div className="card border-info mb-3">
-                <div className="card-header">
-                        <h1 style={{textAlignVertical: "center",textAlign: "center",}}>Skills</h1>
+                    <div className="card-header">
+                        <h1 style={{ textAlignVertical: "center", textAlign: "center", }}>Skills</h1>
                     </div>
-                    <div className="card-body" style={{textAlignVertical: "center",textAlign: "center",}}>
+                    <div className="card-body" style={{ textAlignVertical: "center", textAlign: "center", }}>
                         {
                             Skills.map((data, i) => (
                                 <div className="py-3" key={i}>
@@ -55,43 +57,60 @@ const Index = () => (
                     </div>
                 </div>
             </div>
+            {/**Experiences */}
             <div className="col-md-8">
                 <div className="card border-light mb-3">
-                    <div className = "card-header">
-                        <h1 style={{textAlignVertical: "center",textAlign: "center",}}> Experience</h1>
+                    <div className="card-header">
+                        <h1 style={{ textAlignVertical: "center", textAlign: "center", }}> Experience</h1>
                     </div>
                     <div className="card-body">
                         <ul>
-                           {
-                            Experiences.map(({title, description, from, to}, i) => (
-                                <li key={i}>
-                                    <h3>{title}</h3>
-                                    <h5>{from}-{to}</h5>
-                                    <p>{description}</p>
-                                </li>
-                            )
-                            )   
-                        }
+                            {
+                                Experiences.map(({ title, description, from, to }, i) => (
+                                    <li key={i}>
+                                        <h3>{title}</h3>
+                                        <h5>{from}-{to}</h5>
+                                        <p>{description}</p>
+                                    </li>
+                                )
+                                )
+                            }
                         </ul>
                     </div>
                 </div>
-                <div className="card border-success mb-3">
+                {/** REMEMBER TO FILL UP THIS BLANK SPACE WITH SOMENTHIN IDK BUT IM MUST DO IT, A VIDEO WOULD BE GREAT<*/}
+            </div>
+        </div>
+        {/** Portfolio */}
+        <div className="row">
+            <div className="col-md-12">
+                <div className="card border-dark mb-3">
                     <div className="card-header">
-                        <h1 style={{textAlignVertical: "center",textAlign: "center",}}>Some public projects</h1>
+                        <h1 style={{ textAlignVertical: "center", textAlign: "center", }}> Portfolio </h1>
                     </div>
                     <div className="card-body">
-                        <ul>
-                        <p> For confidential reasons i couldn't share all the projects i've worked on, but the ones i've done as a technical probe and for the university will be here, also you'll see more on the github tab. </p>
+                        <div className="row">
                         {
-                            Projects.map(({name, technologies, description, link}, i) =>(
-                                <li key = {i}>
-                                    <h3><a href={link}>{name}</a></h3>
-                                    <p className="text-muted"><strong>Technologies:</strong> {technologies}</p>
-                                    <p className="text-secondary">{description} </p>
-                                </li>
-                            ))
-                        }
-                        </ul>
+                        Projects.map((data, i) => (
+                            <div className="col-md-4 p-2" key={i}>
+                                <div className="card h-100">
+                                    <div className="overflow">
+                                        <img src={data.imgRef} alt="" className="card-img-top" />
+                                    </div>
+                                    <div className="card-body">
+                                        <h3 className="p-1">{data.name}</h3>
+                                        {/** Aca debe salir una animacion a la hora de poner el mouse encima con las tecnologias de data.technologies*/}
+                                        <p className="text-secondary p-1">{data.technologies}</p>
+                                        <p>{data.description}</p>
+                                        <Link href={data.link} passHref>
+                                            <button component="a" type="button" className="btn btn-dark button-centered-own" >Github page</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                        </div>
                     </div>
                 </div>
             </div>
